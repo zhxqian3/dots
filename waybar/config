@@ -1,0 +1,74 @@
+{
+    "layer": "top", 
+    "modules-left": ["custom/launcher","hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray",  "pulseaudio",  "backlight", "battery", "custom/lock", "clock", "custom/power-menu"],
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "1": "\u0031",
+        "2": "\u0032",
+        "3": "\u0033",
+        "4": "\u0034",
+        "5": "\u0035",
+        "active": " 󰮯",
+        "default": "\uf6e2"
+      }
+    },
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%b %d %Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "backlight": {
+        "device": "eDP-1",
+        "format": "{icon}",
+        "tooltip-format": "{percent}",
+        "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "]
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "\uf6a9",
+        "format-icons": {
+            "default": ["\uf026", "\uf027", "\uf028"]
+        }
+    },
+    "battery": {
+      "bat": "BAT0",
+      "adapter": "ADP0",
+      "interval": 60,
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "{icon} ",
+      "format-warning": "{icon}",
+      "format-critical": "{icon}",
+      "format-charging": "<span font-family='Font Awesome 6 Free'>\uf0e7</span>",
+      "format-plugged": "\ue55c", 
+      "format-alt": "{icon} {time}",
+      "format-full": "\uf240",
+      "format-icons": ["\uf244", "\uf243", "\uf242","\uf241","\uf240"]
+    },
+   "custom/lock": {
+       "tooltip" : false,
+       "on-click": "hyprlock",
+       "format" : "\uf023"
+    },
+    "custom/power-menu": {
+        "format": "\uf011",
+        "on-click": "shutdown now"
+    }, 
+    "custom/launcher": {
+        "format": "\uf005",
+        "on-click": "wofi --show=drun"
+    }
+}
