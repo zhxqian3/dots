@@ -69,6 +69,6 @@
     }, 
     "custom/launcher": {
         "format": "\uf005",
-        "on-click": "wofi --show=drun"
+        "on-click": "wofi --show=drun --define=key_expand=Tab"
     }
 }

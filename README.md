@@ -4,13 +4,16 @@
 
 ## Installation
 ```text
-sudo pacman -S hyprland kitty waybar dunst swaybg blueman dunst pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie obs-studio wofi nwg-look qt5ct qt6ct
+sudo pacman -S hyprland kitty waybar dunst swaybg blueman dunst pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie obs-studio wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk
 ```
 
 ### Fonts
 ```text
 sudo pacman -S ttf-cascadia-code-nerd ttf-jetbrains-mono-nerd ttf-iosevka-nerd otf-font-awesome nodejs-material-design-icons
 ```
+
+### Hyprcursor theme
+[Nordzy-cursors](https://github.com/guillaumeboehm/Nordzy-cursors)
 
 ## Credits
 Thanks to:
