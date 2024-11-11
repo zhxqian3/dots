@@ -25,7 +25,7 @@
     "clock": {
         "format": "{:%H:%M}",
         "format-alt": "{:%b %d %Y}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<span font='LXGW WenKai Mono'>{calendar}</span>"
     },
     "backlight": {
         "device": "eDP-1",
@@ -38,7 +38,8 @@
         "format-muted": "\uf6a9",
         "format-icons": {
             "default": ["\uf026", "\uf027", "\uf028"]
-        }
+        },
+        "on-click": "pavucontrol"
     },
     "battery": {
       "bat": "BAT0",
