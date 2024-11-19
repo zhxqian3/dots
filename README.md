@@ -16,6 +16,11 @@ sudo pacman -S ttf-cascadia-code-nerd ttf-jetbrains-mono-nerd ttf-iosevka-nerd o
 ### Hyprcursor theme
 [Nordzy-cursors](https://github.com/guillaumeboehm/Nordzy-cursors)
 
+### Plugins
+hyprexpo
+
+[hyprland-plugins](https://github.com/hyprwm/hyprland-plugins)
+
 ## Credits
 Thanks to:
 - [1amSimp1e/dots](https://github.com/1amSimp1e/dots)
