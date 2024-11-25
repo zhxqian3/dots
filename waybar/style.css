@@ -16,7 +16,7 @@ window#waybar.hidden {
 }
 
 #window {
-  color: #64727d;
+  color: #ecd3a0;
 }
 
 #clock,
@@ -131,6 +131,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
+  border-radius: 8px 0px 0px 8px;
   color: #81A1C1;
   padding-left: 9px;
   font-size: 22px;
