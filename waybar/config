@@ -46,7 +46,7 @@
     "backlight": {
         "device": "eDP-1",
         "format": "{icon}",
-        "tooltip-format": "{percent}",
+        "tooltip-format": "{percent}%",
         "format-icons": [
             "󱩎 ",
             "󱩏 ",
@@ -63,6 +63,7 @@
     "pulseaudio": {
         "format": "{icon}",
         "format-muted": "\uf6a9",
+        "tooltip-format": "{volume}%",
         "format-icons": {
             "default": [
                 "\uf026",
@@ -80,6 +81,7 @@
             "warning": 30,
             "critical": 15
         },
+        "tooltip-format": "{capacity}%",
         "max-length": 20,
         "format": "{icon} ",
         "format-warning": "{icon}",
@@ -102,10 +104,12 @@
         "format": "\uf023"
     },
     "custom/power-menu": {
+        "tooltip": false,
         "format": "\uf011",
-        "on-click": "shutdown now"
+        "on-click": "systemctl poweroff"
     },
     "custom/launcher": {
+        "tooltip": false,
         "format": "\uf699",
         "on-click": "wofi --show=drun --define=key_expand=Tab"
     }
