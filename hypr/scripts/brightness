@@ -1,7 +1,7 @@
 #!/bin/sh
 
 down() {
-brightnessctl s +5%
+brightnessctl s +2%
 brightness=$(brightnessctl g)
 max_brightness=$(brightnessctl m)
 brightness_percentage=$((brightness * 100 / max_brightness))
@@ -10,7 +10,7 @@ dunstify -a "BRIGHTNESS" "Decreasing to $brightness_percentage%" -h int:value:"$
 }
 
 up() {
-brightnessctl s 5%-
+brightnessctl s 2%-
 brightness=$(brightnessctl g)
 max_brightness=$(brightnessctl m)
 brightness_percentage=$((brightness * 100 / max_brightness))
