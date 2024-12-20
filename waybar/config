@@ -2,10 +2,11 @@
     "layer": "top",
     "modules-left": [
         "custom/launcher",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
     ],
     "modules-right": [
         "tray",
@@ -13,7 +14,6 @@
         "backlight",
         "battery",
         "custom/lock",
-        "clock",
         "custom/power-menu"
     ],
     "hyprland/workspaces": {
@@ -28,10 +28,11 @@
             "7": "柒",
             "8": "捌",
             "9": "玖",
+            "10": "拾",
             "active": "\uf578"
         },
         "persistent-workspaces": {
-            "*": 7
+            "*": 6
         }
     },
     "hyprland/window": {
@@ -41,8 +42,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%H:%M}",
-        "format-alt": "{:%b %d %Y}",
+        "format": "{:%Y-%m-%d %H:%M}",
         "tooltip-format": "<span font='LXGW WenKai Mono'>{calendar}</span>"
     },
     "backlight": {
