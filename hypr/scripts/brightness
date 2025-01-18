@@ -1,21 +1,21 @@
 #!/bin/sh
 
 down() {
-brightnessctl s +2%
+brightnessctl set 2%-
 brightness=$(brightnessctl g)
 max_brightness=$(brightnessctl m)
 brightness_percentage=$((brightness * 100 / max_brightness))
 
-dunstify -a "BRIGHTNESS" "Decreasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -i ~/.config/dunst/assets/ui/brightness-down.png -r 2593 -u normal
+dunstify -a "BRIGHTNESS" "Decreasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -i ~/.config/dunst/assets/ui/brightness_down.png -r 2593 -u normal
 }
 
 up() {
-brightnessctl s 2%-
+brightnessctl set +2%
 brightness=$(brightnessctl g)
 max_brightness=$(brightnessctl m)
 brightness_percentage=$((brightness * 100 / max_brightness))
 
-dunstify -a "BRIGHTNESS" "Increasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -i ~/.config/dunst/assets/ui/brightness-up.png -r 2593 -u normal
+dunstify -a "BRIGHTNESS" "Increasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -i ~/.config/dunst/assets/ui/brightness_up.png -r 2593 -u normal
 }
 
 case "$1" in

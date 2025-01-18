@@ -1,6 +1,4 @@
-# My dofiles of Arch + Hyprland
-
-***Note***: Please consider carefully whether to use my dot files, I am not proficient in hyprland
+# My dofiles
 
 ## Installation
 ```text
