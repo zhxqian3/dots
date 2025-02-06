@@ -73,7 +73,7 @@
                 "\uf028"
             ]
         },
-        "on-click": "pavucontrol"
+        "on-click": "uwsm app -- pavucontrol"
     },
     "battery": {
         "bat": "BAT0",
@@ -102,7 +102,7 @@
     },
     "custom/lock": {
         "tooltip": false,
-        "on-click": "hyprlock",
+        "on-click": "uwsm app -- hyprlock",
         "format": "\uf023"
     },
     "custom/power-menu": {
@@ -113,6 +113,6 @@
     "custom/launcher": {
         "tooltip": false,
         "format": "\uf699",
-        "on-click": "wofi --show=drun --define=key_expand=Tab -i"
+        "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true --define=key_expand=Tab -i)"
     }
 }
