@@ -113,6 +113,6 @@
     "custom/launcher": {
         "tooltip": false,
         "format": "\uf699",
-        "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true --define=key_expand=Tab -i)"
+        "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true -i)"
     }
 }
