@@ -9,6 +9,7 @@
         "clock"
     ],
     "modules-right": [
+        "privacy",
         "tray",
         "pulseaudio",
         "backlight",
@@ -43,7 +44,7 @@
     },
     "clock": {
         "format": "{:%Y-%m-%d %H:%M}",
-        "tooltip-format": "<span font='LXGW WenKai Mono'>{calendar}</span>"
+        "tooltip-format": "<span font='Sarasa Fixed SC Bold'>{calendar}</span>"
     },
     "backlight": {
         "device": "eDP-1",
@@ -114,5 +115,22 @@
         "tooltip": false,
         "format": "\uf699",
         "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true -i)"
+    },
+    "privacy": {
+        "icon-spacing": 10,
+        "icon-size": 18,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 18
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 18
+            }
+        ]
     }
 }

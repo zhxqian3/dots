@@ -1,15 +1,14 @@
 # My dofiles
 
-## Installation
+## Required packages
 ```text
-sudo pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie obs-studio wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk pavucontrol pulseaudio xdg-user-dirs hyprlock hyprpaper uwsm
+sudo pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie obs-studio wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk pavucontrol xdg-user-dirs hyprlock hyprpaper uwsm helvum pipewire-pulse
 ```
 
 ### Fonts
 ```text
-sudo pacman -S ttf-cascadia-code-nerd ttf-jetbrains-mono-nerd ttf-iosevka-nerd otf-font-awesome nodejs-material-design-icons
+sudo pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic
 ```
-[lxgw/LxgwWenKai](https://github.com/lxgw/LxgwWenKai)
 
 ### Hyprcursor theme
 [Nordzy-cursors](https://github.com/guillaumeboehm/Nordzy-cursors)
