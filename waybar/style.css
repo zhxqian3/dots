@@ -199,7 +199,7 @@ window#waybar.fullscreen #window {
 #battery.full,
 #battery.plugged {
   font-size: 22.5px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 @keyframes blink {
@@ -273,15 +273,6 @@ label:focus {
   background-color: #eb4d4b;
 }
 
-#idle_inhibitor {
-  background-color: #242933;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
-}
-
 #custom-spotify {
   color: #abb2bf;
 }
@@ -329,6 +320,29 @@ label:focus {
   border-radius: 8px;
   padding: 0 15px 0 15px;
   margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#idle_inhibitor.activated {
+  background-color: #242933;
+  color: #eb4d4b;
+  border-radius: 8px;
+  padding: 0 15px 0 15px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#idle_inhibitor.deactivated {
+  background-color: #242933;
+  color: #5aaca5;
+  border-radius: 8px;
+  padding: 0 15px 0 15px;
+  margin-left: 7px;
+  margin-right: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
 }

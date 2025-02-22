@@ -14,8 +14,7 @@
         "pulseaudio",
         "backlight",
         "battery",
-        "custom/lock",
-        "custom/power-menu"
+        "group/custom"
     ],
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -43,7 +42,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%Y-%m-%d %H:%M}",
+        "format": "{:%A %m-%d %H:%M}",
         "tooltip-format": "<span font='Sarasa Fixed SC Bold'>{calendar}</span>"
     },
     "backlight": {
@@ -132,5 +131,24 @@
                 "tooltip-icon-size": 18
             }
         ]
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "\uf004",
+            "deactivated": "\uf72e"
+        },
+        "tooltip": true
+    },
+    "group/custom": {
+        "orientation": "inherit",
+        "modules": [
+            "custom/power-menu",
+            "custom/lock",
+            "idle_inhibitor"
+        ],
+        "drawer": {
+            "click-to-reveal": false
+        }
     }
 }
