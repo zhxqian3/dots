@@ -6,7 +6,7 @@ brightness=$(brightnessctl g)
 max_brightness=$(brightnessctl m)
 brightness_percentage=$((brightness * 100 / max_brightness))
 
-dunstify -a "BRIGHTNESS" "Decreasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -I ~/.config/dunst/assets/ui/brightness_down.png -h string:x-dunst-stack-tag:brightness -u normal
+dunstify -a "BRIGHTNESS" "Decreasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -I ~/.config/dunst/assets/ui/brightness_down.png -h string:x-dunst-stack-tag:brightness -u low
 }
 
 up() {
@@ -15,7 +15,7 @@ brightness=$(brightnessctl g)
 max_brightness=$(brightnessctl m)
 brightness_percentage=$((brightness * 100 / max_brightness))
 
-dunstify -a "BRIGHTNESS" "Increasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -I ~/.config/dunst/assets/ui/brightness_up.png -h string:x-dunst-stack-tag:brightness -u normal
+dunstify -a "BRIGHTNESS" "Increasing to $brightness_percentage%" -h int:value:"$brightness_percentage" -I ~/.config/dunst/assets/ui/brightness_up.png -h string:x-dunst-stack-tag:brightness -u low
 }
 
 case "$1" in
