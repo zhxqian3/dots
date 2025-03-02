@@ -3,7 +3,6 @@
 down() {
 pamixer -d 2
 volume=$(pamixer --get-volume)
-[$volume -gt 0 ] && volume=`expr $volume`  
 dunstify -a "VOLUME" "Decreasing to $volume%" -h int:value:"$volume" -I ~/.config/dunst/assets/ui/volume_down.png -h string:x-dunst-stack-tag:volume -u normal
 canberra-gtk-play -i audio-volume-change -d "changevolume"
 }
@@ -11,7 +10,6 @@ canberra-gtk-play -i audio-volume-change -d "changevolume"
 up() {
 pamixer -i 2
 volume=$(pamixer --get-volume)
-[ $volume -lt 1000 ] && volume=`expr $volume`  
 dunstify -a "VOLUME" "Increasing to $volume%" -h int:value:"$volume" -I ~/.config/dunst/assets/ui/volume_up.png -h string:x-dunst-stack-tag:volume -u normal
 canberra-gtk-play -i audio-volume-change -d "changevolume"
 }
