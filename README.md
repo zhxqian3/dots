@@ -7,7 +7,7 @@ sudo pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim sw
 
 ### Fonts
 ```text
-sudo pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic
+sudo pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-nord
 ```
 
 ### Hyprcursor theme
