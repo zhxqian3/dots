@@ -1,0 +1,20 @@
+#window {
+    border-radius: 8px;
+  }
+  
+  #input {
+    padding: 4px;
+    margin: 4px 4px 2px 4px;
+  }
+  
+  #scroll {
+    margin: 4px;
+  }
+  
+  #img {
+    padding: 2px 6px;
+  }
+  
+  #text {
+    padding: 2px 6px;
+  }

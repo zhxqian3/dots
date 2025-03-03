@@ -112,7 +112,7 @@
     "custom/launcher": {
         "tooltip": false,
         "format": "\uf699",
-        "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true -i)"
+        "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true)"
     },
     "privacy": {
         "icon-spacing": 10,

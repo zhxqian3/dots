@@ -45,7 +45,7 @@ max_icon_size = 54
 icon_corner_radius = 4
 
 # Misc/Advanced
-dmenu = "uwsm app -- wofi --show dmenu --prompt \"Select with\" -i"
+dmenu = "uwsm app -- wofi --show dmenu --prompt \"Select with\""
 corner_radius = 10
 
 # Mouse
