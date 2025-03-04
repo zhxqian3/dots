@@ -18,6 +18,15 @@ hyprexpo
 
 [hyprland-plugins](https://github.com/hyprwm/hyprland-plugins)
 
+## Apply dotfiles
+After install all required packages, and if you want to apply my dotfiles, just do:
+```text
+sudo pacman -S rclone
+git clone https://github.com/zhxqian3/dots.git
+cd dots
+./apply.sh
+```
+
 ## Credits
 Thanks to:
 - [1amSimp1e/dots](https://github.com/1amSimp1e/dots)
