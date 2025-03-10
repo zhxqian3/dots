@@ -19,10 +19,10 @@ window#waybar.hidden {
   color: #7a95c9;
   background-color: #252733;
   border-radius: 8px;
-  padding: 0 15px 0 15px;
-  margin-left: 7px;
+  padding: 0 10px 0 10px;
   margin-top: 7px;
   margin-bottom: 7px;
+  margin-left: 7px;
 }
 
 window#waybar.fullscreen #window {
@@ -79,7 +79,7 @@ window#waybar.fullscreen #window {
   box-shadow: inset 0 -3px transparent;
 
   padding-right: 3px;
-  padding-left: 4px;
+  padding-left: 3px;
 
   margin-left: 0.1em;
   margin-right: 0em;
@@ -89,7 +89,7 @@ window#waybar.fullscreen #window {
 #workspaces button.active {
   color: #ecd3a0;
   padding-left: 1px;
-  padding-right: 12px;
+  padding-right: 1px;
   margin-left: 0em;
   margin-right: 0em;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
@@ -106,10 +106,8 @@ window#waybar.fullscreen #window {
 }
 
 #custom-launcher {
-  margin-left: 12px;
-
-  padding-right: 18px;
-  padding-left: 14px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   font-size: 22px;
 
