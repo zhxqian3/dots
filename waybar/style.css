@@ -19,7 +19,8 @@ window#waybar.hidden {
   color: #7a95c9;
   background-color: #252733;
   border-radius: 8px;
-  padding: 0 10px 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 7px;
   margin-bottom: 7px;
   margin-left: 7px;
@@ -29,60 +30,19 @@ window#waybar.fullscreen #window {
   color: #ecd3a0;
 }
 
-#clock,
-#cpu,
-#memory,
-#custom-media,
-#tray,
-#mode,
-#custom-lock,
-#workspaces,
-#idle_inhibitor,
-#custom-power-menu,
-#custom-launcher,
-#custom-spotify,
-#custom-weather,
-#custom-weather.severe,
-#custom-weather.sunnyDay,
-#custom-weather.clearNight,
-#custom-weather.cloudyFoggyDay,
-#custom-weather.cloudyFoggyNight,
-#custom-weather.rainyDay,
-#custom-weather.rainyNight,
-#custom-weather.showyIcyDay,
-#custom-weather.snowyIcyNight,
-#custom-weather.default {
-  color: #e5e5e5;
-  border-radius: 6px;
-  padding: 2px 10px;
-  background-color: #252733;
-  border-radius: 8px;
-  font-size: 18.5px;
-
-  margin-left: 4px;
-  margin-right: 4px;
-
-  margin-top: 8.5px;
-  margin-bottom: 8.5px;
-}
-
-#cpu {
-  color: #fb958b;
-}
-
-#memory {
-  color: #a1c999;
-}
-
 #workspaces button {
+  background-color: #252733;
+  border-radius: 0px;
   color: #7a95c9;
   box-shadow: inset 0 -3px transparent;
 
   padding-right: 3px;
   padding-left: 3px;
 
-  margin-left: 0.1em;
+  margin-left: 0em;
   margin-right: 0em;
+  margin-top: 7px;
+  margin-bottom: 7px;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
@@ -95,87 +55,69 @@ window#waybar.fullscreen #window {
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-  margin-left: 0;
+/* For the first workspace button */
+#workspaces button:first-child {
+  border-top-left-radius: 8px; /* Radius of the upper left corner */
+  border-bottom-left-radius: 8px; /* Lower left corner radius */
+  padding-left: 10px;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-  margin-right: 0;
+/* For the last workspace button */
+#workspaces button:last-child {
+  border-top-right-radius: 8px; /* Radius of rounded corners on the upper right */
+  border-bottom-right-radius: 8px; /* Lower right corner radius */
+  padding-right: 10px;
 }
 
 #custom-launcher {
-  padding-right: 15px;
-  padding-left: 15px;
-
-  font-size: 22px;
-
-  color: #ecd3a0;
-
-  margin-top: 8.5px;
-  margin-bottom: 8.5px;
-}
-
-#backlight,
-#battery,
-#pulseaudio,
-#network {
   background-color: #252733;
-  padding: 0em 2em;
-
-  font-size: 20px;
-
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-
-  padding-top: 3px;
-  padding-bottom: 3px;
-
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  color: #ecd3a0;
   margin-top: 7px;
   margin-bottom: 7px;
-
-  font-size: 20px;
+  margin-right: 7px;
+  margin-left: 3px;
+  border-radius: 8px;
 }
 
 #pulseaudio {
+  background-color: #252733;
   border-radius: 8px 0px 0px 8px;
   color: #81A1C1;
-  padding-left: 9px;
+  padding-left: 10px;
+  padding-right: 5px;
   font-size: 22px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 #pulseaudio.muted {
   color: #fb958b;
-  padding-left: 9px;
+  padding-left: 10px;
   font-size: 22px;
 }
 
 #backlight {
-  color: #8a909e;
-  padding-right: 5px;
-  padding-left: 8px;
-  font-size: 21.2px;
-}
-
-#network {
-  padding-left: 0.2em;
-  color: #5E81AC;
-  border-radius: 8px 0px 0px 8px;
-  padding-left: 12px;
-  padding-right: 14px;
-  font-size: 20px;
-}
-
-#network.disconnected {
-  color: #fb958b;
+  background-color: #252733;
+  color: #ecd3a0;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 22px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 #battery {
+  background-color: #252733;
   color: #8fbcbb;
   border-radius: 0px 8px 8px 0px;
-  padding-right: 2px;
+  padding-right: 10px;
+  padding-left: 5px;
   font-size: 22px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 #battery.critical,
@@ -183,20 +125,20 @@ window#waybar.fullscreen #window {
 #battery.full,
 #battery.plugged {
   color: #8fbcbb;
-  padding-left: 6px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 10px;
   font-size: 22px;
 }
 
 #battery.charging {
-  font-size: 18px;
-  padding-right: 13px;
-  padding-left: 4px;
+  font-size: 22px;
+  padding-right: 10px;
+  padding-left: 5px;
 }
 
 #battery.full,
 #battery.plugged {
-  font-size: 22.5px;
+  font-size: 22px;
   padding-right: 20px;
 }
 
@@ -216,33 +158,45 @@ window#waybar.fullscreen #window {
 }
 
 #custom-lock {
+  background-color: #252733;
   color: #ecd3a0;
-  padding: 0 15px 0 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
+  border-radius: 8px;
+  font-size: 22px;
 }
 
 #clock {
+  background-color: #252733;
   color: #7a95c9;
   font-family: CaskaydiaCove Nerd Font;
   font-weight: bold;
   margin-top: 7px;
   margin-bottom: 7px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #custom-power-menu {
+  background-color: #252733;
   color: #e78284;
-  padding: 0 15px 0 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 7px;
   margin-top: 7px;
+  margin-right: 3px;
   margin-bottom: 7px;
+  border-radius: 8px;
+  font-size: 22px;
 }
 
 tooltip {
   font-family: CaskaydiaCove Nerd Font;
-  border-radius: 15px;
-  padding: 15px;
+  padding: 10px;
   background-color: #1f232b;
 }
 
@@ -256,10 +210,14 @@ label:focus {
 }
 
 #tray {
+  background-color: #252733;
   margin-right: 8px;
   margin-top: 7px;
   margin-bottom: 7px;
-  font-size: 30px;
+  font-size: 40px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #tray>.passive {
@@ -271,76 +229,41 @@ label:focus {
   background-color: #eb4d4b;
 }
 
-#custom-spotify {
-  color: #abb2bf;
-}
-
-#custom-weather {
-  font-family: CaskaydiaCove Nerd Font;
-  font-size: 19px;
-  color: #8a909e;
-}
-
-#custom-weather.severe {
-  color: #eb937d;
-}
-
-#custom-weather.sunnyDay {
-  color: #c2ca76;
-}
-
-#custom-weather.clearNight {
-  color: #cad3f5;
-}
-
-#custom-weather.cloudyFoggyDay,
-#custom-weather.cloudyFoggyNight {
-  color: #c2ddda;
-}
-
-#custom-weather.rainyDay,
-#custom-weather.rainyNight {
-  color: #5aaca5;
-}
-
-#custom-weather.showyIcyDay,
-#custom-weather.snowyIcyNight {
-  color: #d6e7e5;
-}
-
-#custom-weather.default {
-  color: #dbd9d8;
-}
-
 #privacy {
   color: #e78284;
   background-color: #252733;
   border-radius: 8px;
-  padding: 0 15px 0 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 7px;
   margin-right: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
+  font-size: 22px;
 }
 
 #idle_inhibitor.activated {
   background-color: #242933;
   color: #eb4d4b;
   border-radius: 8px;
-  padding: 0 15px 0 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 7px;
   margin-right: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
+  font-size: 22px;
 }
 
 #idle_inhibitor.deactivated {
   background-color: #242933;
   color: #5aaca5;
   border-radius: 8px;
-  padding: 0 15px 0 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 7px;
   margin-right: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
+  font-size: 22px;
 }

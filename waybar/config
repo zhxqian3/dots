@@ -39,6 +39,7 @@
         "format": "{class}"
     },
     "tray": {
+        "icon-size": 18,
         "spacing": 10
     },
     "clock": {
@@ -49,16 +50,7 @@
         "format": "{icon}",
         "tooltip-format": "{percent}%",
         "format-icons": [
-            "󱩎 ",
-            "󱩏 ",
-            "󱩐 ",
-            "󱩑 ",
-            "󱩒 ",
-            "󱩓 ",
-            "󱩔 ",
-            "󱩕 ",
-            "󱩖 ",
-            "󰛨 "
+            "\uf0eb"
         ]
     },
     "pulseaudio": {
