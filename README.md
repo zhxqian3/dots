@@ -1,4 +1,5 @@
-# My dofiles
+# Dots
+***Notes***: The scripts and commands below should be used on Arch Linux, and I am not sure about other Linux distributions.
 
 ## Required packages
 ```sh
