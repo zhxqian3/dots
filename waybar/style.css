@@ -57,15 +57,19 @@ window#waybar.fullscreen #window {
 
 /* For the first workspace button */
 #workspaces button:first-child {
-  border-top-left-radius: 8px; /* Radius of the upper left corner */
-  border-bottom-left-radius: 8px; /* Lower left corner radius */
+  border-top-left-radius: 8px;
+  /* Radius of the upper left corner */
+  border-bottom-left-radius: 8px;
+  /* Lower left corner radius */
   padding-left: 10px;
 }
 
 /* For the last workspace button */
 #workspaces button:last-child {
-  border-top-right-radius: 8px; /* Radius of rounded corners on the upper right */
-  border-bottom-right-radius: 8px; /* Lower right corner radius */
+  border-top-right-radius: 8px;
+  /* Radius of rounded corners on the upper right */
+  border-bottom-right-radius: 8px;
+  /* Lower right corner radius */
   padding-right: 10px;
 }
 
@@ -176,6 +180,8 @@ window#waybar.fullscreen #window {
   font-weight: bold;
   margin-top: 7px;
   margin-bottom: 7px;
+  margin-left: 7px;
+  margin-right: 7px;
   border-radius: 8px;
   padding-left: 10px;
   padding-right: 10px;
@@ -211,7 +217,7 @@ label:focus {
 
 #tray {
   background-color: #252733;
-  margin-right: 8px;
+  margin-right: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
   font-size: 40px;
@@ -235,7 +241,6 @@ label:focus {
   border-radius: 8px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 7px;
   margin-right: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -266,4 +271,15 @@ label:focus {
   margin-top: 7px;
   margin-bottom: 7px;
   font-size: 22px;
+}
+
+#submap {
+  color: #ecd3a0;
+  background-color: #252733;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 7px;
 }

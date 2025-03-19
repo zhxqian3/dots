@@ -3,7 +3,8 @@
     "modules-left": [
         "custom/launcher",
         "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/window",
+        "hyprland/submap"
     ],
     "modules-center": [
         "clock"
@@ -37,6 +38,11 @@
     },
     "hyprland/window": {
         "format": "{class}"
+    },
+    "hyprland/submap": {
+        "format": "{}",
+        "max-length": 8,
+        "tooltip": false
     },
     "tray": {
         "icon-size": 18,
