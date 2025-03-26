@@ -1,3 +1,6 @@
 insensitive=true
 allow_images=true
-columns=2
+gtk_dark=true
+width=600
+height=350
+image_size=40
