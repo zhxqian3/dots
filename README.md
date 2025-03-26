@@ -1,6 +1,9 @@
 # Dots
 ***Notes***: The scripts and commands below should be used on Arch Linux, and I am not sure about other Linux distributions.
 
+## Preview
+![preview](screenshot.png)
+
 ## Required packages
 ```sh
 sudo pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie obs-studio wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk pavucontrol xdg-user-dirs hyprlock hyprpaper uwsm helvum pipewire-pulse
@@ -40,3 +43,4 @@ Thanks to:
 - [hyprland wiki](https://wiki.hyprland.org/)
 - [Matt-FTW/dotfiles](https://github.com/Matt-FTW/dotfiles)
 - [Yutsuten/linux-config](https://github.com/Yutsuten/linux-config)
+- [TuxChad/wofi](https://github.com/TuxChad/wofi)
