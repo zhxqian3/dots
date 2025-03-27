@@ -6,7 +6,7 @@
 
 ## Required packages
 ```sh
-sudo pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie obs-studio wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk pavucontrol xdg-user-dirs hyprlock hyprpaper uwsm helvum pipewire-pulse
+sudo pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk pavucontrol xdg-user-dirs hyprpaper uwsm helvum pipewire-pulse
 ```
 If you want to install required packages including fonts below, you can also use the `install.sh` script: 
 ```sh

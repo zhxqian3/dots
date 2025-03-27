@@ -1,6 +1,12 @@
 #!/bin/sh
 
-pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie obs-studio wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk pavucontrol xdg-user-dirs hyprlock hyprpaper uwsm helvum pipewire-pulse
+pacman -S hyprland hyprpaper hypridle hyprlock
+pacman -S xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-user-dirs pipewire wireplumber uwsm polkit-kde-agent
+pacman -S kitty waybar dunst wofi network-manager-applet copyq
+pacman -S pamixer playerctl pavucontrol pipewire-pulse helvum
+pacman -S gammastep brightnessctl grim swappy slurp blueman udiskie
+pacman -S nwg-look qt5ct qt6ct breeze breeze5 breeze-gtk
+pacman -S qt5-wayland qt6-wayland
 
 # Fonts
 pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-nord
