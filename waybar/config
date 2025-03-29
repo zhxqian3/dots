@@ -83,11 +83,7 @@
         "tooltip-format": "{capacity}%",
         "max-length": 20,
         "format": "{icon} ",
-        "format-warning": "{icon}",
-        "format-critical": "{icon}",
-        "format-charging": "<span font-family='Font Awesome 6 Free'>\uf0e7</span>",
         "format-plugged": "\ue55c",
-        "format-alt": "{icon} {time}",
         "format-full": "\uf240",
         "format-icons": [
             "\uf244",

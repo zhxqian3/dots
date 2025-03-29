@@ -124,40 +124,19 @@ window#waybar.fullscreen #window {
   margin-bottom: 7px;
 }
 
-#battery.critical,
-#battery.warning,
-#battery.full,
-#battery.plugged {
-  color: #8fbcbb;
-  padding-left: 5px;
-  padding-right: 10px;
-  font-size: 22px;
-}
-
-#battery.charging {
-  font-size: 22px;
-  padding-right: 10px;
-  padding-left: 5px;
-}
-
-#battery.full,
-#battery.plugged {
-  font-size: 22px;
+#battery.full {
   padding-right: 20px;
 }
 
-@keyframes blink {
-  to {
-    background-color: rgba(30, 34, 42, 0.5);
-    color: #abb2bf;
-  }
+#battery.plugged {
+  color: #8fbcbb;
 }
 
 #battery.warning {
   color: #ecd3a0;
 }
 
-#battery.critical:not(.charging) {
+#battery.critical {
   color: #fb958b;
 }
 
@@ -165,7 +144,7 @@ window#waybar.fullscreen #window {
   background-color: #252733;
   color: #ecd3a0;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 14px;
   margin-left: 7px;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -191,7 +170,7 @@ window#waybar.fullscreen #window {
   background-color: #252733;
   color: #e78284;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 14px;
   margin-left: 7px;
   margin-top: 7px;
   margin-right: 3px;
@@ -252,7 +231,7 @@ label:focus {
   color: #eb4d4b;
   border-radius: 8px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 16px;
   margin-left: 7px;
   margin-right: 7px;
   margin-top: 7px;
