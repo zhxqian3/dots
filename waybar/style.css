@@ -43,7 +43,7 @@ window#waybar.fullscreen #window {
   margin-right: 0em;
   margin-top: 7px;
   margin-bottom: 7px;
-  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 #workspaces button.active {
@@ -52,7 +52,7 @@ window#waybar.fullscreen #window {
   padding-right: 1px;
   margin-left: 0em;
   margin-right: 0em;
-  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 /* For the first workspace button */

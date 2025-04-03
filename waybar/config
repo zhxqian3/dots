@@ -30,7 +30,7 @@
             "8": "捌",
             "9": "玖",
             "10": "拾",
-            "active": "\uf578"
+            "active": ""
         },
         "persistent-workspaces": {
             "*": 6
@@ -56,18 +56,18 @@
         "format": "{icon}",
         "tooltip-format": "{percent}%",
         "format-icons": [
-            "\uf0eb"
+            ""
         ]
     },
     "pulseaudio": {
         "format": "{icon}",
-        "format-muted": "\uf6a9",
+        "format-muted": "",
         "tooltip-format": "{volume}%",
         "format-icons": {
             "default": [
-                "\uf026",
-                "\uf027",
-                "\uf028"
+                "",
+                "",
+                ""
             ]
         },
         "on-click": "uwsm app -- pavucontrol"
@@ -83,29 +83,30 @@
         "tooltip-format": "{capacity}%",
         "max-length": 20,
         "format": "{icon} ",
-        "format-plugged": "\ue55c",
-        "format-full": "\uf240",
+        "format-plugged": "",
+        "format-full": "",
+        "format-charging": "",
         "format-icons": [
-            "\uf244",
-            "\uf243",
-            "\uf242",
-            "\uf241",
-            "\uf240"
+            "",
+            "",
+            "",
+            "",
+            ""
         ]
     },
     "custom/lock": {
         "tooltip": false,
         "on-click": "uwsm app -- hyprlock",
-        "format": "\uf023"
+        "format": ""
     },
     "custom/power-menu": {
         "tooltip": false,
-        "format": "\uf011",
+        "format": "",
         "on-click": "systemctl poweroff"
     },
     "custom/launcher": {
         "tooltip": false,
-        "format": "\uf699",
+        "format": "",
         "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true --no-actions)"
     },
     "privacy": {
@@ -128,8 +129,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "\uf004",
-            "deactivated": "\uf72e"
+            "activated": "",
+            "deactivated": ""
         },
         "tooltip": true
     },
