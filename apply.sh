@@ -7,3 +7,7 @@ rclone sync swappy/ ~/.config/swappy/ --verbose
 rclone sync uwsm/ ~/.config/uwsm/ --verbose
 rclone sync waybar/ ~/.config/waybar/ --verbose
 rclone sync wofi/ ~/.config/wofi/ --verbose
+
+# Add execution permissions
+cd $HOME/.config/hypr/scripts
+chmod 744 *.sh
