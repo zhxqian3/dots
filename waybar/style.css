@@ -1,7 +1,7 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: CaskaydiaCove Nerd Font;
-  font-size: 19px;
+  font-size: 17px;
 }
 
 window#waybar {
@@ -19,11 +19,11 @@ window#waybar.hidden {
   color: #7a95c9;
   background-color: #252733;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 window#waybar.fullscreen #window {
@@ -41,8 +41,8 @@ window#waybar.fullscreen #window {
 
   margin-left: 0em;
   margin-right: 0em;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
@@ -61,7 +61,7 @@ window#waybar.fullscreen #window {
   /* Radius of the upper left corner */
   border-bottom-left-radius: 8px;
   /* Lower left corner radius */
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 /* For the last workspace button */
@@ -70,18 +70,18 @@ window#waybar.fullscreen #window {
   /* Radius of rounded corners on the upper right */
   border-bottom-right-radius: 8px;
   /* Lower right corner radius */
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 #custom-launcher {
   background-color: #252733;
-  padding-right: 10px;
-  padding-left: 10px;
-  font-size: 22px;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: 20px;
   color: #ecd3a0;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-right: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
   margin-left: 3px;
   border-radius: 8px;
 }
@@ -90,42 +90,42 @@ window#waybar.fullscreen #window {
   background-color: #252733;
   border-radius: 8px 0px 0px 8px;
   color: #81A1C1;
-  padding-left: 10px;
-  padding-right: 5px;
-  font-size: 22px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  padding-left: 8px;
+  padding-right: 3px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #pulseaudio.muted {
   color: #fb958b;
-  padding-left: 10px;
-  font-size: 22px;
+  padding-left: 8px;
+  font-size: 20px;
 }
 
 #backlight {
   background-color: #252733;
   color: #ecd3a0;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-size: 22px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  padding-right: 11px;
+  padding-left: 12px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #battery {
   background-color: #252733;
   color: #8fbcbb;
   border-radius: 0px 8px 8px 0px;
-  padding-right: 10px;
-  padding-left: 5px;
-  font-size: 22px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #battery.full {
-  padding-right: 20px;
+  padding-right: 18px;
 }
 
 #battery.plugged {
@@ -143,13 +143,13 @@ window#waybar.fullscreen #window {
 #custom-lock {
   background-color: #252733;
   color: #ecd3a0;
-  padding-left: 10px;
-  padding-right: 14px;
-  margin-left: 7px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  padding-left: 8px;
+  padding-right: 12px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 8px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #clock {
@@ -157,37 +157,37 @@ window#waybar.fullscreen #window {
   color: #7a95c9;
   font-family: CaskaydiaCove Nerd Font;
   font-weight: bold;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 7px;
-  margin-right: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #custom-power-menu {
   background-color: #252733;
   color: #e78284;
-  padding-left: 10px;
-  padding-right: 14px;
-  margin-left: 7px;
-  margin-top: 7px;
+  padding-left: 8px;
+  padding-right: 12px;
+  margin-left: 5px;
+  margin-top: 5px;
   margin-right: 3px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   border-radius: 8px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 tooltip {
   font-family: CaskaydiaCove Nerd Font;
-  padding: 10px;
+  padding: 8px;
   background-color: #1f232b;
 }
 
 tooltip label {
   font-family: CaskaydiaCove Nerd Font;
-  padding: 5px;
+  padding: 3px;
 }
 
 label:focus {
@@ -196,13 +196,13 @@ label:focus {
 
 #tray {
   background-color: #252733;
-  margin-right: 7px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  font-size: 40px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 35px;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #tray>.passive {
@@ -218,47 +218,47 @@ label:focus {
   color: #e78284;
   background-color: #252733;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 7px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  font-size: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 #idle_inhibitor.activated {
   background-color: #252733;
   color: #eb4d4b;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 16px;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  font-size: 22px;
+  padding-left: 8px;
+  padding-right: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 #idle_inhibitor.deactivated {
   background-color: #252733;
   color: #5aaca5;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  font-size: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 #submap {
   color: #ecd3a0;
   background-color: #252733;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }

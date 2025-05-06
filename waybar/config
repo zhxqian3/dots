@@ -45,7 +45,7 @@
         "tooltip": false
     },
     "tray": {
-        "icon-size": 18,
+        "icon-size": 20,
         "spacing": 10
     },
     "clock": {
@@ -117,12 +117,12 @@
             {
                 "type": "screenshare",
                 "tooltip": true,
-                "tooltip-icon-size": 18
+                "tooltip-icon-size": 16
             },
             {
                 "type": "audio-in",
                 "tooltip": true,
-                "tooltip-icon-size": 18
+                "tooltip-icon-size": 16
             }
         ]
     },
