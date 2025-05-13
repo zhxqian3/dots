@@ -1,4 +1,6 @@
 # Dots
+***Notes***: This branch is an archive branch that used Hyprland before, and currently I am using Niri WM.
+
 ***Notes***: The scripts and commands below should be used on Arch Linux, and I am not sure about other Linux distributions.
 
 ## Preview
