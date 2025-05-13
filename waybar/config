@@ -2,9 +2,8 @@
     "layer": "top",
     "modules-left": [
         "custom/launcher",
-        "hyprland/workspaces",
-        "hyprland/window",
-        "hyprland/submap"
+        "niri/workspaces",
+        "niri/window"
     ],
     "modules-center": [
         "clock"
@@ -17,32 +16,16 @@
         "battery",
         "group/custom"
     ],
-    "hyprland/workspaces": {
+    "niri/workspaces": {
         "format": "{icon}",
+        "disable-click": false,
         "format-icons": {
-            "1": "壹",
-            "2": "贰",
-            "3": "叁",
-            "4": "肆",
-            "5": "伍",
-            "6": "陆",
-            "7": "柒",
-            "8": "捌",
-            "9": "玖",
-            "10": "拾",
-            "active": ""
-        },
-        "persistent-workspaces": {
-            "*": 6
+            "active": "",
+            "default": ""
         }
     },
-    "hyprland/window": {
-        "format": "{class}"
-    },
-    "hyprland/submap": {
-        "format": "{}",
-        "max-length": 8,
-        "tooltip": false
+    "niri/window": {
+        "format": "{app_id}"
     },
     "tray": {
         "icon-size": 20,
@@ -70,7 +53,7 @@
                 ""
             ]
         },
-        "on-click": "uwsm app -- pavucontrol"
+        "on-click": "pavucontrol"
     },
     "battery": {
         "bat": "BAT0",
@@ -96,7 +79,7 @@
     },
     "custom/lock": {
         "tooltip": false,
-        "on-click": "uwsm app -- hyprlock",
+        "on-click": "hyprlock",
         "format": ""
     },
     "custom/power-menu": {
@@ -107,7 +90,7 @@
     "custom/launcher": {
         "tooltip": false,
         "format": "",
-        "on-click": "uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true --no-actions)"
+        "on-click": "wofi --show drun --no-actions"
     },
     "privacy": {
         "icon-spacing": 10,

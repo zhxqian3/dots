@@ -6,7 +6,14 @@
 
 ## Required packages
 ```sh
-sudo pacman -S hyprland kitty waybar dunst blueman pamixer brightnessctl grim swappy slurp pipewire wireplumber xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland qt6-wayland polkit-kde-agent network-manager-applet hypridle hyprlock gammastep copyq udiskie wofi nwg-look qt5ct qt6ct playerctl breeze5 breeze breeze-gtk pavucontrol xdg-user-dirs hyprpaper uwsm helvum pipewire-pulse
+pacman -S niri xdg-desktop-portal-gnome gnome-keyring xwayland-satellite
+pacman -S hyprpaper hypridle hyprlock
+pacman -S xdg-desktop-portal-gtk xdg-user-dirs pipewire wireplumber polkit-kde-agent
+pacman -S kitty waybar dunst wofi network-manager-applet copyq
+pacman -S pamixer playerctl pavucontrol pipewire-pulse helvum
+pacman -S gammastep brightnessctl blueman udiskie
+pacman -S nwg-look qt5ct qt6ct breeze breeze5 breeze-gtk
+pacman -S qt5-wayland qt6-wayland
 ```
 If you want to install required packages including fonts below, you can also use the `install.sh` script: 
 ```sh
@@ -17,21 +24,16 @@ sudo ./install.sh
 
 ### Fonts
 ```sh
-sudo pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-nord
+pacman -S ttf-cascadia-code-nerd otf-font-awesome ttf-sarasa-gothic noto-fonts-emoji tela-circle-icon-theme-nord
 ```
 
-### Hyprcursor theme
+### Cursor theme
 [Nordzy-cursors](https://github.com/guillaumeboehm/Nordzy-cursors)
-
-### Plugins
-hyprexpo
-
-[hyprland-plugins](https://github.com/hyprwm/hyprland-plugins)
 
 ## Apply dotfiles
 After install all required packages, and if you want to apply my dotfiles, just do:
 ```sh
-sudo pacman -S rclone
+pacman -S rclone
 git clone https://github.com/zhxqian3/dots.git
 cd dots
 ./apply.sh
@@ -44,3 +46,4 @@ Thanks to:
 - [Matt-FTW/dotfiles](https://github.com/Matt-FTW/dotfiles)
 - [Yutsuten/linux-config](https://github.com/Yutsuten/linux-config)
 - [TuxChad/wofi](https://github.com/TuxChad/wofi)
+- [niri wiki](https://github.com/YaLTeR/niri/wiki)
