@@ -26,8 +26,12 @@ window#waybar.hidden {
   margin-left: 5px;
 }
 
-window#waybar.fullscreen #window {
+window#waybar.solo #window {
   color: #ecd3a0;
+}
+
+window#waybar.empty #window {
+  opacity: 0;
 }
 
 #workspaces button {
