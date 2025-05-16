@@ -60,7 +60,7 @@ layout {
         proportion 0.5
         proportion 0.66667
     }
-    default-column-width { proportion 0.5; }
+    default-column-width {}
     focus-ring {
         off
     }
@@ -222,17 +222,17 @@ binds {
     // Most actions that you can bind here can also be invoked programmatically with
     // `niri msg action do-something`.
 
-    Mod+Q { spawn "kitty"; }
-    Mod+D repeat=false { spawn "wofi" "--show" "drun" "--no-actions"; }
+    Mod+Q                                          { spawn "kitty"; }
+    Mod+D      repeat=false                        { spawn "wofi" "--show" "drun" "--no-actions"; }
     Mod+Ctrl+L repeat=false allow-inhibiting=false { spawn "hyprlock"; }
-    Mod+V repeat=false { spawn "copyq" "menu"; }
-    Mod+B { spawn "firefox"; }
+    Mod+V      repeat=false                        { spawn "copyq" "menu"; }
+    Mod+B                                          { spawn "firefox"; }
 
-    XF86AudioMute allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh mute"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh down"; }
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh up"; }
-    XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
-    XF86MonBrightnessUp allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/brightness.sh up"; }
+    XF86AudioMute         allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh mute"; }
+    XF86AudioLowerVolume  allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh down"; }
+    XF86AudioRaiseVolume  allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh up"; }
+    XF86AudioPlay         allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/brightness.sh up"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/brightness.sh down"; }
 
     // Scroll Bindings
@@ -240,75 +240,75 @@ binds {
     Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
-    Mod+Shift+WheelScrollDown      { focus-column-right-or-first; }
-    Mod+Shift+WheelScrollUp        { focus-column-left-or-last; }
-    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
-    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+    Mod+Shift+WheelScrollDown                { focus-column-right-or-first; }
+    Mod+Shift+WheelScrollUp                  { focus-column-left-or-last; }
+    Mod+Ctrl+Shift+WheelScrollDown           { move-column-right; }
+    Mod+Ctrl+Shift+WheelScrollUp             { move-column-left; }
 
     Mod+Shift+E { quit skip-confirmation=true; }
     
     // Screen Shot
-    Print { screenshot; }
+    Print      { screenshot; }
     Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Alt+Print  { screenshot-window; }
 
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-    Mod+C { close-window; }
-    Mod+BackSpace { close-window; }
+    Mod+C            { close-window; }
+    Mod+BackSpace    { close-window; }
 
-    Mod+Left  { focus-column-left-or-last; }
-    Mod+Down  { focus-window-down-or-top; }
-    Mod+Up    { focus-window-up-or-bottom; }
-    Mod+Right { focus-column-right-or-first; }
-    Mod+H     { focus-column-left-or-last; }
-    Mod+J     { focus-window-down-or-top; }
-    Mod+K     { focus-window-up-or-bottom; }
-    Mod+L     { focus-column-right-or-first; }
+    Mod+Left         { focus-column-left-or-last; }
+    Mod+Down         { focus-window-down-or-top; }
+    Mod+Up           { focus-window-up-or-bottom; }
+    Mod+Right        { focus-column-right-or-first; }
+    Mod+H            { focus-column-left-or-last; }
+    Mod+J            { focus-window-down-or-top; }
+    Mod+K            { focus-window-up-or-bottom; }
+    Mod+L            { focus-column-right-or-first; }
 
-    Mod+Shift+Left  { move-column-left; }
-    Mod+Shift+Down  { move-window-down; }
-    Mod+Shift+Up    { move-window-up; }
-    Mod+Shift+Right { move-column-right; }
-    Mod+Shift+H     { move-column-left; }
-    Mod+Shift+J     { move-window-down; }
-    Mod+Shift+K     { move-window-up; }
-    Mod+Shift+L     { move-column-right; }
+    Mod+Shift+Left   { move-column-left; }
+    Mod+Shift+Down   { move-window-down; }
+    Mod+Shift+Up     { move-window-up; }
+    Mod+Shift+Right  { move-column-right; }
+    Mod+Shift+H      { move-column-left; }
+    Mod+Shift+J      { move-window-down; }
+    Mod+Shift+K      { move-window-up; }
+    Mod+Shift+L      { move-column-right; }
 
-    Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
-    Mod+Ctrl+Home { move-column-to-first; }
-    Mod+Ctrl+End  { move-column-to-last; }
+    Mod+Home         { focus-column-first; }
+    Mod+End          { focus-column-last; }
+    Mod+Ctrl+Home    { move-column-to-first; }
+    Mod+Ctrl+End     { move-column-to-last; }
 
-    Mod+U              { focus-workspace-up; }
-    Mod+I              { focus-workspace-down; }
-    Mod+Shift+U         { move-column-to-workspace-up; }
-    Mod+Shift+I         { move-column-to-workspace-down; }
-    Mod+Ctrl+U         { move-workspace-up; }
-    Mod+Ctrl+I         { move-workspace-down; }
+    Mod+U            { focus-workspace-up; }
+    Mod+I            { focus-workspace-down; }
+    Mod+Shift+U      { move-column-to-workspace-up; }
+    Mod+Shift+I      { move-column-to-workspace-down; }
+    Mod+Ctrl+U       { move-workspace-up; }
+    Mod+Ctrl+I       { move-workspace-down; }
 
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
 
-    Mod+R { switch-preset-column-width; }
-    Mod+Shift+R { switch-preset-window-height; }
-    Mod+Ctrl+R { reset-window-height; }
-    Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
+    Mod+R            { switch-preset-column-width; }
+    Mod+Shift+R      { switch-preset-window-height; }
+    Mod+Ctrl+R       { reset-window-height; }
+    Mod+F            { maximize-column; }
+    Mod+Shift+F      { fullscreen-window; }
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
-    Mod+Ctrl+F { expand-column-to-available-width; }
+    Mod+Ctrl+F       { expand-column-to-available-width; }
 
-    Mod+Ctrl+C { center-column; }
+    Mod+Ctrl+C       { center-column; }
 
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
-    Mod+Shift+Minus { set-window-height "-10%"; }
-    Mod+Shift+Equal { set-window-height "+10%"; }
+    Mod+Minus        { set-column-width "-10%"; }
+    Mod+Equal        { set-column-width "+10%"; }
+    Mod+Shift+Minus  { set-window-height "-10%"; }
+    Mod+Shift+Equal  { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+T       { toggle-window-floating; }
-    Mod+Shift+T { switch-focus-between-floating-and-tiling; }
+    Mod+T            { toggle-window-floating; }
+    Mod+Shift+T      { switch-focus-between-floating-and-tiling; }
 
-    Mod+G { toggle-column-tabbed-display; }
+    Mod+G            { toggle-column-tabbed-display; }
 }
