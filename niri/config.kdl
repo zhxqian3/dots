@@ -108,7 +108,7 @@ spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "nm-applet" "--indicator"
 spawn-at-startup "hypridle"
 spawn-at-startup "gammastep"
-spawn-at-startup "copyq" "--start-server"
+spawn-at-startup "clipse" "-listen"
 spawn-at-startup "fcitx5" "-D"
 spawn-at-startup "udiskie"
 spawn-at-startup "brightnessctl" "set" "1"
@@ -197,12 +197,16 @@ animations {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 window-rule {
-    match app-id=r#"^.*(copyq)$"#
+    match app-id=r#"^clipse$"#
+
     open-floating true
+    default-column-width  { proportion 0.4; }
+    default-window-height { proportion 0.7; }
 }
 window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    match app-id=r#"^clipse$"#
 
     block-out-from "screen-capture"
 }
@@ -225,8 +229,12 @@ binds {
     Mod+Q                                          { spawn "kitty"; }
     Mod+D      repeat=false                        { spawn "wofi" "--show" "drun" "--no-actions"; }
     Mod+Ctrl+L repeat=false allow-inhibiting=false { spawn "hyprlock"; }
-    Mod+V      repeat=false                        { spawn "copyq" "menu"; }
+    Mod+V      repeat=false                        { spawn "kitty" "--app-id" "clipse" "clipse"; }
     Mod+B                                          { spawn "firefox"; }
+
+    // Clipse kill and rerun
+    Mod+Shift+V { spawn "sh" "-c" "~/.config/hypr/scripts/clipse.sh kill"; }
+    Mod+Ctrl+V  { spawn "sh" "-c" "~/.config/hypr/scripts/clipse.sh listen"; }
 
     XF86AudioMute         allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh mute"; }
     XF86AudioLowerVolume  allow-when-locked=true { spawn "sh" "-c" "~/.config/hypr/scripts/volume.sh down"; }

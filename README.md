@@ -9,7 +9,7 @@
 pacman -S niri xdg-desktop-portal-gnome gnome-keyring xwayland-satellite
 pacman -S hyprpaper hypridle hyprlock
 pacman -S xdg-desktop-portal-gtk xdg-user-dirs pipewire wireplumber polkit-kde-agent
-pacman -S kitty waybar dunst wofi network-manager-applet copyq
+pacman -S kitty waybar dunst wofi network-manager-applet wl-clipboard xclip
 pacman -S pamixer playerctl pavucontrol pipewire-pulse helvum
 pacman -S gammastep brightnessctl blueman udiskie
 pacman -S nwg-look qt5ct qt6ct breeze breeze5 breeze-gtk
@@ -37,6 +37,17 @@ pacman -S rclone
 git clone https://github.com/zhxqian3/dots.git
 cd dots
 ./apply.sh
+```
+
+### Clipse
+Currently I use [clipse](https://github.com/savedra1/clipse) as the clipboard manager. Since it is not in the official repository, you need to install clipse yourself. `wl-clipboard` and `xclip` have been installed in the installation script. Once everything is done, apply configuration:
+```sh
+rclone sync clipse/ ~/.config/clipse/ --verbose
+```
+In addition, currently clipse does not support the so-called "private mode". It is recommended to close the clipse background in the privacy scenario and then reopen it:
+```sh
+clipse -kill
+clipse -listen
 ```
 
 ## Credits
