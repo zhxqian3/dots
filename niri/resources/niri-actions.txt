@@ -19,10 +19,14 @@ Actions:
           Screenshot the focused screen
   screenshot-window
           Screenshot the focused window
+  toggle-keyboard-shortcuts-inhibit
+          Enable or disable the keyboard shortcuts inhibitor (if any) for the focused surface
   close-window
           Close the focused window
   fullscreen-window
           Toggle fullscreen on the focused window
+  toggle-windowed-fullscreen
+          Toggle windowed (fake) fullscreen on the focused window
   focus-window
           Focus a window by id
   focus-window-in-column
@@ -41,6 +45,8 @@ Actions:
           Focus the next column to the right, looping if at end
   focus-column-left-or-last
           Focus the next column to the left, looping if at start
+  focus-column
+          Focus a column by index
   focus-window-or-monitor-up
           Focus the window or the monitor above
   focus-window-or-monitor-down
@@ -85,6 +91,8 @@ Actions:
           Move the focused column to the left or to the monitor to the left
   move-column-right-or-to-monitor-right
           Move the focused column to the right or to the monitor to the right
+  move-column-to-index
+          Move the focused column to a specific index on its workspace
   move-window-down
           Move the focused window down in a column
   move-window-up
@@ -113,6 +121,8 @@ Actions:
           Center the focused column on the screen
   center-window
           Center the focused window on the screen
+  center-visible-columns
+          Center all fully visible columns on the screen
   focus-workspace-down
           Focus the workspace below
   focus-workspace-up
@@ -155,6 +165,8 @@ Actions:
           Focus the previous monitor
   focus-monitor-next
           Focus the next monitor
+  focus-monitor
+          Focus a monitor by name
   move-window-to-monitor-left
           Move the focused window to the monitor to the left
   move-window-to-monitor-right
@@ -167,6 +179,8 @@ Actions:
           Move the focused window to the previous monitor
   move-window-to-monitor-next
           Move the focused window to the next monitor
+  move-window-to-monitor
+          Move the focused window to a specific monitor
   move-column-to-monitor-left
           Move the focused column to the monitor to the left
   move-column-to-monitor-right
@@ -179,6 +193,8 @@ Actions:
           Move the focused column to the previous monitor
   move-column-to-monitor-next
           Move the focused column to the next monitor
+  move-column-to-monitor
+          Move the focused column to a specific monitor
   set-window-width
           Change the width of the focused window
   set-window-height
@@ -237,6 +253,24 @@ Actions:
           Move the floating window on screen
   toggle-window-rule-opacity
           Toggle the opacity of the focused window
+  set-dynamic-cast-window
+          Set the dynamic cast target to the focused window
+  set-dynamic-cast-monitor
+          Set the dynamic cast target to the focused monitor
+  clear-dynamic-cast-target
+          Clear the dynamic cast target, making it show nothing
+  toggle-overview
+          Toggle (open/close) the Overview
+  open-overview
+          Open the Overview
+  close-overview
+          Close the Overview
+  toggle-urgent
+          Toggle urgent status of a window
+  set-urgent
+          Set urgent status of a window
+  unset-urgent
+          Unset urgent status of a window
   help
           Print this message or the help of the given subcommand(s)
 

@@ -7,7 +7,7 @@
 ## Required packages
 ```sh
 pacman -S niri xdg-desktop-portal-gnome gnome-keyring xwayland-satellite
-pacman -S hyprpaper hypridle hyprlock
+pacman -S hyprpaper hypridle hyprlock swaybg
 pacman -S xdg-desktop-portal-gtk xdg-user-dirs pipewire wireplumber polkit-kde-agent
 pacman -S kitty waybar dunst wofi network-manager-applet wl-clipboard
 pacman -S pamixer playerctl pavucontrol pipewire-pulse helvum

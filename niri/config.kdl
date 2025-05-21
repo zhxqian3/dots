@@ -1,7 +1,7 @@
 // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 
 // Input device configuration.
 // Find the full list of options on the wiki:
@@ -21,6 +21,8 @@ input {
         accel-speed 0.0
     }
     disable-power-key-handling
+    mod-key "Super"
+    mod-key-nested "Alt"
 }
 
 // You can configure outputs by their name, which you can find
@@ -70,6 +72,7 @@ layout {
         width 3
         active-gradient from="rgb(96, 150, 180)" to="rgb(238, 233, 218)" angle=180 relative-to="workspace-view"
         inactive-color "rgb(76, 88, 91)"
+        urgent-color "rgb(241, 103, 103)"
     }
 
     // You can enable drop shadows for windows.
@@ -83,13 +86,14 @@ layout {
         // hide-when-single-tab
         place-within-column
         gap 0
-        width 4
+        width 6
         length total-proportion=0.5
         position "left"
         gaps-between-tabs 2
         corner-radius 5
-        active-color "rgb(243, 129, 129)"
-        inactive-color "rgb(149, 225, 211)"
+        active-color "rgb(254, 93, 38)"
+        inactive-color "rgb(193, 219, 179)"
+        urgent-color "rgb(242, 192, 120)"
     }
 
     insert-hint {
@@ -112,6 +116,7 @@ spawn-at-startup "clipse" "-listen"
 spawn-at-startup "fcitx5" "-D"
 spawn-at-startup "udiskie"
 spawn-at-startup "brightnessctl" "set" "1"
+spawn-at-startup "sh" "-c" "swaybg -i ~/.config/hypr/papers/backdrop.png -m fill"
 
 prefer-no-csd
 
@@ -148,6 +153,13 @@ clipboard {
 
 hotkey-overlay {
     skip-at-startup
+}
+
+overview {
+    zoom 0.5
+    workspace-shadow {
+        off
+    }
 }
 
 // Animation settings.
@@ -191,6 +203,9 @@ animations {
         duration-ms 200
         curve "ease-out-quad"
     }
+    overview-open-close {
+        spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
+    }
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -213,6 +228,13 @@ window-rule {
 window-rule {
     geometry-corner-radius 5
     clip-to-geometry true
+}
+
+// Layer rules
+// Put swaybg inside the overview backdrop.
+layer-rule {
+    match namespace="^wallpaper$"
+    place-within-backdrop true
 }
 
 binds {
@@ -257,7 +279,7 @@ binds {
     
     // Screen Shot
     Print      { screenshot; }
-    Ctrl+Print { screenshot-screen; }
+    Ctrl+Print { screenshot-screen show-pointer=false; }
     Alt+Print  { screenshot-window; }
 
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
@@ -319,4 +341,14 @@ binds {
     Mod+Shift+T      { switch-focus-between-floating-and-tiling; }
 
     Mod+G            { toggle-column-tabbed-display; }
+
+    // Open/close the Overview: a zoomed-out view of workspaces and windows.
+    // You can also move the mouse into the top-left hot corner,
+    // or do a four-finger swipe up on a touchpad.
+    Mod+Tab     repeat=false { toggle-overview; }
+
+    // Dynamic screencast target
+    Mod+S       repeat=false { set-dynamic-cast-monitor; }
+    Mod+Shift+S repeat=false { set-dynamic-cast-window; }
+    Mod+Ctrl+S  repeat=false { clear-dynamic-cast-target; }
 }
