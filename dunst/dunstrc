@@ -1,7 +1,8 @@
+# Ref: https://github.com/Yutsuten/linux-config/blob/main/desktop/dunstrc.conf
+# Author: Yutsuten
+
 # For defaults and description of each option, see the link bellow
 # https://github.com/dunst-project/dunst/blob/master/dunstrc
-# https://github.com/Yutsuten/linux-config/blob/main/desktop/dunstrc.conf
-# Author: Yutsuten
 
 [global]
 # Display
@@ -33,6 +34,7 @@ markup = full
 format = "<small>%a</small>\n<big><b>%s</b></big>\n%b"
 alignment = left
 vertical_alignment = center
+idle_threshold = 30s
 show_age_threshold = -1
 hide_duplicate_count = false
 
