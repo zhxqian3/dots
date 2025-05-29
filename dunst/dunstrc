@@ -35,7 +35,7 @@ format = "<small>%a</small>\n<big><b>%s</b></big>\n%b"
 alignment = left
 vertical_alignment = center
 idle_threshold = 30s
-show_age_threshold = -1
+show_age_threshold = 30s
 hide_duplicate_count = false
 
 # Icon
@@ -57,6 +57,7 @@ mouse_right_click = close_all
 
 [urgency_low]
 frame_color = "#2d303cf0"
+history_ignore = true
 timeout = 6
 
 [urgency_normal]
