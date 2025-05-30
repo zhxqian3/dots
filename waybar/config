@@ -14,6 +14,7 @@
         "pulseaudio",
         "backlight",
         "battery",
+        "custom/notification",
         "group/custom"
     ],
     "niri/workspaces": {
@@ -91,6 +92,12 @@
         "tooltip": false,
         "format": "",
         "on-click": "wofi --show drun --no-actions"
+    },
+    "custom/notification": {
+        "format": "",
+        "on-click": "dunstctl history-pop",
+        "on-click-right": "dunstctl close-all",
+        "tooltip": false
     },
     "privacy": {
         "icon-spacing": 10,
