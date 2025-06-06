@@ -219,7 +219,7 @@ animations {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 window-rule {
-    match app-id=r#"^clipse$"#
+    match app-id=r#"^wl\.clipse$"#
 
     open-floating true
     default-column-width  { proportion 0.4; }
@@ -228,7 +228,7 @@ window-rule {
 window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
-    match app-id=r#"^clipse$"#
+    match app-id=r#"^wl\.clipse$"#
 
     block-out-from "screen-capture"
 }
@@ -255,10 +255,10 @@ binds {
     // Most actions that you can bind here can also be invoked programmatically with
     // `niri msg action do-something`.
 
-    Mod+Q                                          { spawn "kitty"; }
+    Mod+Q                                          { spawn "ghostty"; }
     Mod+D      repeat=false                        { spawn "wofi" "--show" "drun" "--no-actions"; }
     Mod+Ctrl+L repeat=false allow-inhibiting=false { spawn "hyprlock"; }
-    Mod+V      repeat=false                        { spawn "kitty" "--app-id" "clipse" "clipse"; }
+    Mod+V      repeat=false                        { spawn "ghostty" "--class=wl.clipse" "--background-opacity=1" "-e" "clipse"; }
     Mod+B                                          { spawn "firefox"; }
 
     // Clipse kill and rerun

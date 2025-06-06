@@ -1,0 +1,7 @@
+# theme = Calamity
+theme = iceberg-dark
+background-opacity = 0.9
+cursor-style = block
+font-family = CaskaydiaCove Nerd Font
+font-size = 14
+class = terminal.ghostty
