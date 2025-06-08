@@ -58,7 +58,7 @@ mouse_right_click = close_all
 [urgency_low]
 frame_color = "#2d303cf0"
 history_ignore = true
-timeout = 6
+timeout = 3
 
 [urgency_normal]
 frame_color = "#484848f0"
