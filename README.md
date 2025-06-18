@@ -53,7 +53,7 @@ clipse -listen
 ## Credits
 Thanks to:
 - [1amSimp1e/dots](https://github.com/1amSimp1e/dots)
-- [hyprland wiki](https://wiki.hyprland.org/)
+- [hyprland wiki](https://wiki.hypr.land/)
 - [Matt-FTW/dotfiles](https://github.com/Matt-FTW/dotfiles)
 - [Yutsuten/linux-config](https://github.com/Yutsuten/linux-config)
 - [TuxChad/wofi](https://github.com/TuxChad/wofi)
